@@ -407,7 +407,9 @@ code {
   background: #444444;
 }
 
-
+.widget {
+  padding: 0 0 1em;
+}
 
 
 
