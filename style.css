@@ -148,7 +148,10 @@ body {
   }
   #branding img {width: 100%;}
   #content {padding: 5%;}
-  #content * {max-width: 100%;}
+  #content * {
+    max-width: 100%;
+    height: auto;
+  }
 }
 
 
