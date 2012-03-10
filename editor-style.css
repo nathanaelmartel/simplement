@@ -97,3 +97,24 @@ a:active img[class*="wp-image-"] {
 	background: #fff;
 	border-color: #ddd;
 }
+
+blockquote {
+  margin: 1em 1em 1em 2em;
+  padding: 0.5em;
+  -webkit-box-shadow: 1px 1px 5px #999999;
+  -moz-box-shadow: 1px 1px 5px #999999;
+  box-shadow: 1px 1px 5px #999999;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  background: url(images/blockquote.png) no-repeat 0 0;
+  text-indent: 50px;
+  color: #000000;
+  font-family: 'UbuntuMediumItalic';
+  font-weight: normal;
+  font-style: normal;
+}
+
+blockquote p {
+  margin: 0;
+}
