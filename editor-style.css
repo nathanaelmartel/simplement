@@ -23,6 +23,9 @@ strong {
   font-weight: bold;
 }
 
+.entry-content a {
+	text-decoration: underline;
+}
 /* Images */
 img[class*="wp-image-"] {
 	height: auto;
