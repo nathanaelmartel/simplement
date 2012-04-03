@@ -206,6 +206,13 @@ a:hover {
   list-style: none;
   float: left;
   display: block;
+  background: #F2F1F0;
+  background: -webkit-gradient(linear, 0 0, 0 bottom, from(#F2F1F0), to(#dddddd));
+  background: -webkit-linear-gradient(#F2F1F0, #dddddd);
+  background: -moz-linear-gradient(#F2F1F0, #dddddd);
+  background: -ms-linear-gradient(#F2F1F0, #dddddd);
+  background: -o-linear-gradient(#F2F1F0, #dddddd);
+  background: linear-gradient(#F2F1F0, #dddddd);
 }
 
 #access a {
@@ -399,6 +406,21 @@ blockquote p {
   #content * {
     max-width: 100%;
     height: auto;
+  }
+}
+
+
+@media handheld, only screen and (max-width: 650px), only screen and (max-device-width: 650px) {
+  #access ul li {
+    float: none; 
+    width: 100%; 
+    text-align: center;
+  }
+  #access {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
   }
 }
 
