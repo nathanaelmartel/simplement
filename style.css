@@ -412,13 +412,13 @@ blockquote p {
 
 @media handheld, only screen and (max-width: 650px), only screen and (max-device-width: 650px) {
   #access ul li {
-    float: none; 
+    float: none; 
     width: 100%; 
     text-align: center;
   }
   #access {
-    position: absolute;
-    bottom: 0;
+    position: absolute;
+    bottom: 0;
     left: 0;
     width: 100%;
   }
