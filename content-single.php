@@ -1,7 +1,7 @@
 
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
+	<header class="entry-header grid_12 prefix_2 suffix_2 large-left">
 		<h1 class="entry-title"><?php the_title(); ?></h1>
 
 		<?php if ( 'post' == get_post_type() ) : ?>
@@ -11,12 +11,12 @@
 		<?php endif; ?>
 	</header><!-- .entry-header -->
 
-	<div class="entry-content">
+	<div class="entry-content grid_12 prefix_2 suffix_2 large-right">
 		<?php the_content(); ?>
 		<?php wp_link_pages( array( 'before' => '<div class="page-link"><span>' . __( 'Pages:', 'twentyeleven' ) . '</span>', 'after' => '</div>' ) ); ?>
 	</div><!-- .entry-content -->
 
-	<footer class="entry-meta">
+	<footer class="entry-meta grid_12 prefix_2 suffix_2 large-left">
 		<?php
 			/* translators: used between list items, there is a space after the comma */
 			$categories_list = get_the_category_list( __( ', ', 'twentyeleven' ) );
@@ -60,4 +60,5 @@
 		</div><!-- #entry-author-info -->
 		<?php endif; ?>
 	</footer><!-- .entry-meta -->
+	<div class="clear"></div>
 </article><!-- #post-<?php the_ID(); ?> -->

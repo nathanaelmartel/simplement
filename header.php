@@ -35,17 +35,17 @@
 <body <?php body_class(); ?>>
 <div id="page" class="hfeed container_16">
 	<header id="branding" role="banner">
-			<hgroup>
-				<h1 id="site-title" class="grid_16" ><span><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></span></h1>
-				<h2 id="site-description" class="grid_16"><?php bloginfo( 'description' ); ?></h2>
-        <div class="clear"></div>
+			<hgroup class="grid_16">
+				<h1 id="site-title" ><span><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></span></h1>
+				<h2 id="site-description"><?php bloginfo( 'description' ); ?></h2>
 			</hgroup>
+      <div class="clear no-clear-large"></div>
 
 			<?php
 				$header_image = get_header_image();
 				if ( ! empty( $header_image ) ) :
 			?>
-			<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
+			<a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="header-image">
 				<?php
 					if ( is_singular() &&
 							has_post_thumbnail( $post->ID ) &&
@@ -58,7 +58,7 @@
 			</a>
 			<?php endif;  ?>
 
-
+      <div class="clear"></div>
 			<nav id="access" role="navigation">
 				<h3 class="assistive-text"><?php _e( 'Main menu', 'twentyeleven' ); ?></h3>
 				<div class="skip-link"><a class="assistive-text" href="#content" title="<?php esc_attr_e( 'Skip to primary content', 'twentyeleven' ); ?>"><?php _e( 'Skip to primary content', 'twentyeleven' ); ?></a></div>

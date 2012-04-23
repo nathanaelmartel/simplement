@@ -2,12 +2,16 @@
 
 get_header(); ?>
 
-		<div id="primary" class="grid_12 prefix_2 suffix_2">
+		<div id="primary">
 			<div id="content" role="main">
 
 			<?php if ( have_posts() ) : ?>
 
-				<?php twentyeleven_content_nav( 'nav-above' ); ?>
+        <div class="grid_16">
+				  <?php twentyeleven_content_nav( 'nav-above' ); ?>
+				  <div class="clear"></div>
+			  </div>
+
 
 				<?php /* Start the Loop */ ?>
 				<?php while ( have_posts() ) : the_post(); ?>
@@ -16,11 +20,15 @@ get_header(); ?>
 
 				<?php endwhile; ?>
 
-				<?php twentyeleven_content_nav( 'nav-below' ); ?>
+        <div class="grid_16">
+				  <?php twentyeleven_content_nav( 'nav-above' ); ?>
+				  <div class="clear"></div>
+			  </div>
+
 
 			<?php else : ?>
 
-				<article id="post-0" class="post no-results not-found">
+				<article id="post-0" class="post no-results not-found grid_12 prefix_2 suffix_2">
 					<header class="entry-header">
 						<h1 class="entry-title"><?php _e( 'Nothing Found', 'twentyeleven' ); ?></h1>
 					</header><!-- .entry-header -->

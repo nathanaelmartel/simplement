@@ -12,7 +12,7 @@
  * @since Twenty Eleven 1.0
  */
 ?>
-	<div id="comments">
+	<div id="comments" class="grid_12 prefix_2 suffix_2  large-right">
 	<?php if ( post_password_required() ) : ?>
 		<p class="nopassword"><?php _e( 'This post is password protected. Enter the password to view any comments.', 'twentyeleven' ); ?></p>
 	</div><!-- #comments -->

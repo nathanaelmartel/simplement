@@ -9,11 +9,12 @@
 
 get_header(); ?>
 
-		<section id="primary" class="grid_12 prefix_2 suffix_2">
+		<section id="primary">
 			<div id="content" role="main">
 
 			<?php if ( have_posts() ) : ?>
 
+      <div class="grid_16">
 				<header class="page-header">
 					<h1 class="page-title"><?php
 						printf( __( 'Tag Archives: %s', 'twentyeleven' ), '<span>' . single_tag_title( '', false ) . '</span>' );
@@ -27,6 +28,8 @@ get_header(); ?>
 				</header>
 
 				<?php twentyeleven_content_nav( 'nav-above' ); ?>
+				<div class="clear"></div>
+			</div>
 
 				<?php /* Start the Loop */ ?>
 				<?php while ( have_posts() ) : the_post(); ?>
@@ -41,10 +44,14 @@ get_header(); ?>
 
 				<?php endwhile; ?>
 
+      <div class="grid_16">
 				<?php twentyeleven_content_nav( 'nav-below' ); ?>
+				<div class="clear"></div>
+			</div>
 
 			<?php else : ?>
 
+      <div class="grid_16">
 				<article id="post-0" class="post no-results not-found">
 					<header class="entry-header">
 						<h1 class="entry-title"><?php _e( 'Nothing Found', 'twentyeleven' ); ?></h1>
@@ -55,6 +62,7 @@ get_header(); ?>
 						<?php get_search_form(); ?>
 					</div><!-- .entry-content -->
 				</article><!-- #post-0 -->
+			</div>
 
 			<?php endif; ?>
 

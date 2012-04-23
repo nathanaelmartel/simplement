@@ -60,6 +60,7 @@ body {
   background-color: #f2f1f0;
   font-size: 14px;
   font-family: Georgia, serif;
+  line-height: 30px;
 }
 
 #page {
@@ -95,10 +96,11 @@ body {
 
 h1{
   font-size: 300%;
-  margin: 1em 0;
+  margin: 45px 0;
   font-family: 'UbuntuLight', Arial, sans;
   font-weight: normal;
   font-style: normal;
+  line-height: 45px;
 }
 h1 a {
   color: #333333;
@@ -126,7 +128,7 @@ h2{
   font-family: 'UbuntuLight', Arial, sans;
   font-weight: normal;
   font-style: normal;
-  line-height: 1em;
+  line-height: 45px;
 }
 h3, #comments-title {
   font-size: 130%;
@@ -134,7 +136,7 @@ h3, #comments-title {
   font-family: 'UbuntuLight', Arial, sans;
   font-weight: normal;
   font-style: normal;
-  line-height: 1em;
+  line-height: 45px;
 }
 
 #site-description {
@@ -268,7 +270,9 @@ a:hover {
 .entry-meta, .entry-meta a {
   color: #555555;
   text-align: right;
-  margin: 1em 0;
+  margin-bottom: 1em;
+  margin-top: 1em;
+  line-height: 15px;
 }
 
 .commentlist, .commentlist ul {
@@ -407,6 +411,25 @@ blockquote p {
     max-width: 100%;
     height: auto;
   }
+}
+
+@media screen and (min-width: 1550px) {
+  body{min-width: 1500px}
+  #branding hgroup {width: 520px;float:left;}
+  .header-image {
+    float: left; display: block; width: 960px;
+  }
+  .container_12,.container_16{width: 1500px}
+  .no-clear-large {clear: none;}
+  #content .large-left {padding: 0 0 0 60px;text-align: right;width: 580px;}
+  #content .large-right {padding: 0 60px 0 0;float:right;}
+  #content .entry-content {padding-top: 127px;border-bottom: 1px solid #CCCCCC;}
+  #first, #second, #third {width: 400px; margin: 0 50px;}
+  #nav-single, #nav-above, #nav-below {width: 1480px}
+  #nav-single .grid_8, 
+  #nav-above .nav-previous , #nav-above .nav-next, 
+  #nav-below .nav-next, #nav-below .nav-previous {width: 730px; float: left; }
+  .post {padding: 0; border: none;}
 }
 
 
