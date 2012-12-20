@@ -1,0 +1,279 @@
+/*
+Theme Name: Simplement
+Theme URI: https://github.com/simplementNat/Simplement
+Author: Nathanaël Martel
+Author URI: http://nat.fam-martel.eu
+Description: 
+Version: 0.1
+License: GNU General Public License
+License URI: license.txt
+Tags: 
+*/
+
+
+
+.alignleft {
+  display: inline;
+  float: left;
+  margin-right: 1.625em;
+}
+.alignright {
+  display: inline;
+  float: right;
+  margin-left: 1.625em;
+}
+.aligncenter {
+  clear: both;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/*
+Copyright (c) 2009, Yahoo! Inc. All rights reserved.
+Code licensed under the BSD License:
+http://developer.yahoo.net/yui/license.txt
+version: 2.8.0r4
+http://yui.yahooapis.com/2.8.0r4/build/reset/reset-min.css
+*/
+html{color:#000;background:#FFF;}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td{margin:0;padding:0;}table{border-collapse:collapse;border-spacing:0;}fieldset,img{border:0;}address,caption,cite,code,dfn,em,strong,th,var,optgroup{font-style:inherit;font-weight:inherit;}del,ins{text-decoration:none;}li{list-style:none;}caption,th{text-align:left;}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}q:before,q:after{content:'';}abbr,acronym{border:0;font-variant:normal;}sup{vertical-align:baseline;}sub{vertical-align:baseline;}legend{color:#000;}input,button,textarea,select,optgroup,option{font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit;}input,button,textarea,select{*font-size:100%;}
+
+.clear { clear : both;}
+/* html 5 */
+header, nav, section, aside, footer, article, figure {
+  display : block;
+}
+
+/*
+Copyright (c) 2009, Yahoo! Inc. All rights reserved.
+Code licensed under the BSD License:
+http://developer.yahoo.net/yui/license.txt
+version: 2.8.0r4
+http://yui.yahooapis.com/2.8.0r4/build/base/base-min.css
+*/
+h1{font-size:138.5%;}h2{font-size:123.1%;}h3{font-size:108%;}h1,h2,h3{margin:1em 0;}h1,h2,h3,h4,h5,h6,strong,dt{font-weight:bold;}optgroup{font-weight:normal;}abbr,acronym{border-bottom:1px dotted #000;cursor:help;}em{font-style:italic;}del{text-decoration:line-through;}blockquote,ul,ol,dl{margin:1em;}ol,ul,dl{margin-left:2em;}ol li{list-style:decimal outside;}ul li{list-style:disc outside;}dl dd{margin-left:1em;}th,td{border:1px solid #000;padding:.5em;}th{font-weight:bold;text-align:center;}caption{margin-bottom:.5em;text-align:center;}sup{vertical-align:super;}sub{vertical-align:sub;}p,fieldset,table,pre{margin-bottom:1em;}button,input[type="checkbox"],input[type="radio"],input[type="reset"],input[type="submit"]{padding:1px;}
+
+.clear{clear:both;display:block;overflow:hidden;visibility:hidden;width:0;height:0}.clearfix:before,.clearfix:after{content:'\0020';display:block;overflow:hidden;visibility:hidden;width:0;height:0}.clearfix:after{clear:both}.clearfix{zoom:1}
+
+body {
+  background-color: #fff;
+  font-size: 1.2em;
+  font-family: Georgia, serif;
+  line-height: 1.5em;
+  color: #333;
+}
+
+a {
+  color: #000;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -o-transition: all 1s;
+  -ms-transition: all 1s;
+  transition: all 1s;
+}
+
+#page a:hover, #page a:focus, #page a:active {
+  color: #000;
+  text-decoration: underline;
+}
+
+h1{font-size:2em;}h2{font-size:1.5em;}h3{font-size:1.3em;}h1,h2,h3{margin:1em 0;}h1,h2,h3{font-weight:normal;color: #000;}
+
+.hentry {
+  margin-bottom: 2em;
+  padding-bottom: 2em;
+  border-bottom: 1px dashed #999;
+}
+
+.entry-content {
+	width: 33em;
+	padding: 0 1em;
+  float: left;
+}
+
+.entry-content * { 
+  max-width: 100%;
+}
+
+.entry-header {
+  width: 15em;
+  padding: 0 1em;
+  float: left;
+  text-align: right;
+  position: relative;
+}
+
+.entry-title {
+	margin: 0;
+	padding-bottom: 1em;
+	line-height: 1.3em;
+}
+
+.entry-title a {
+	text-decoration: none;
+}
+
+.entry-meta {
+  color: #999;
+  font-size: .8em;
+  line-height: 1.2em;
+  font-family: Arial;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -o-transition: all 1s;
+  -ms-transition: all 1s;
+  transition: all 1s;
+}
+
+.entry-meta a {
+  color: #999;
+  text-decoration: none;
+}
+
+.author, .comments-link, .categories, .tags {
+	margin-bottom: 1em;
+}
+
+#nav-local {
+  width: 15em;
+  padding: 0 1em;
+  float: left;
+  text-align: right;
+  margin: 0 0 4em;
+}
+
+#main {
+  width: 52em;
+  margin: 0 auto;
+}
+
+@media (max-width: 1000px), (max-device-width: 1000px) {
+	#main {
+    width: auto;
+    max-width: 33em;
+	}
+	.entry-content {
+    width: 100%;
+	  float: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+	}
+	.entry-header {
+    width: 100%;
+	  float: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    text-align: left;
+	}
+	#nav-local {
+    width: 100%;
+    float: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  #nav-local div {
+    display: table-cell;
+    width: 40%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+	}
+  .nav-previous {
+    text-align: left;
+    padding-right: .5em;
+  }
+  .nav-next {
+    text-align: right;
+    padding-left: .5em;
+  }
+	.entry-meta {
+	  display: none;
+	  position: absolute;
+	  top: 4em;
+	  left: .5em;
+    color: #333;
+    width: 100%;
+    -webkit-box-sizing: padding-box;
+    -moz-box-sizing: padding-box;
+    box-sizing: padding-box;
+	  background: #fff;
+	  background: rgba(255, 255, 255, .9);
+	  padding: 1em;
+	  border: 1px solid #999;
+  }
+  .entry-meta a {
+    color: #333;
+	}
+	.entry-title:hover+.entry-meta, .entry-meta:hover {
+    display: block;
+	}
+	.categories, .tags {
+	  margin-bottom: 0;
+	}
+}
+
+
+#branding {
+  margin: 0 0 2em;
+  padding: 1em 0;
+  background-color: #eee;
+  border-bottom: 1px solid #ddd;
+  box-shadow: 0 1px 5px #ddd;
+}
+
+#branding hgroup {
+  max-width: 50em;
+  margin: 0 auto;
+}
+
+#branding h1 {
+  font-size: 3em;
+  font-family: Arial;
+  line-height: 1.5em;
+  margin: .5em 0 0;
+}
+
+#branding h2 {
+  font-size: .7em;
+  line-height: 1.5em;
+  margin-top: 0;
+}
+
+#branding h1 a {
+  text-decoration: none;
+}
+
+@media (max-width: 1000px), (max-device-width: 1000px) {
+  #branding h1 {
+    font-size: 2em;
+  }
+	#branding hgroup {
+    padding: 0 1em;
+	}
+}
+
+#sidebar {
+  margin: 2em 0 0;
+  padding: 1em 0;
+  background-color: #eee;
+  border-top: 1px solid #ddd;
+  box-shadow: 0 -1px 5px #ddd;
+}
+#colophon {
+  padding: 3em 0 1em;
+  background-color: #eee;
+}
+
+#sidebar>ul {
+  width: auto;
+  max-width: 31em;
+  margin: 0 auto;
+}
+
+#site-generator {
+	text-align: center;
+}
