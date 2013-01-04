@@ -46,12 +46,19 @@
 		<div class="entry-content entry-summary">
 			<?php the_excerpt(); ?>
 		</div>
+		<div class="clear"></div>
 		<?php else : ?>
 		<div class="entry-content">
 			<?php the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'twentyeleven' ) ); ?>
 			<?php wp_link_pages( array( 'before' => '<div class="page-link"><span>' . __( 'Pages:' ) . '</span>', 'after' => '</div>' ) ); ?>
-		</div><!-- .entry-content -->
+		</div>
+		<div class="clear"></div>
+		<?php endif; ?>
+		<?php if ( is_single() ) : ?>
+			<div id="comments-area">
+				<?php comments_template( '', true ); ?>	
+			</div>
+			<div class="clear"></div>
 		<?php endif; ?>
 		
-	<div class="clear"></div>
 	</article>

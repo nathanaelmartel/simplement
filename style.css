@@ -277,3 +277,67 @@ h1{font-size:2em;}h2{font-size:1.5em;}h3{font-size:1.3em;}h1,h2,h3{margin:1em 0;
 #site-generator {
 	text-align: center;
 }
+
+#comments-area {
+	border-top: 1px dashed #999999;
+  margin-top: 2em;
+  padding-top: 2em;
+  font-size: .8em;
+}
+
+#respond {
+  border-top: 1px dashed #999999;
+  margin-top: 2em;
+  padding-top: 2em;
+}
+
+.commentlist li {
+	list-style: none;
+	max-width: 33em;
+  border: 1px solid #999999;
+  padding: .5em;
+  margin-bottom: 1em;
+}
+
+.commentlist li * {
+  max-width: 100%;
+}
+
+.comment-body {
+	position: relative;
+}
+
+.comment-meta {
+	position: absolute;
+	top: 0;
+	right: 0;
+  font-size: .8em;
+  color: #999;
+}
+
+.avatar {
+	float: left;
+	margin-right: 8px;
+}
+
+.comment-author {
+	min-height: 32px;
+  border-bottom: 1px dashed #999999;
+  margin-bottom: 1em;
+  padding-bottom: .5em;
+}
+
+.reply {
+  border-top: 1px dashed #999999;
+  margin-top: 1em;
+  font-size: .8em;
+  color: #999;
+}
+
+.reply a, .comment-meta a {
+  color: #999;
+}
+
+.commentlist li:hover .reply a {
+  color: #000;
+}
