@@ -73,6 +73,33 @@ a {
   transition: all 1s;
 }
 
+strong {
+  color: #000000;
+  font-weight: bold;
+}
+
+blockquote {
+  margin: 1em 1em 1em 2em;
+  padding: 0.5em;
+  -webkit-box-shadow: 1px 1px 5px #999999;
+  -moz-box-shadow: 1px 1px 5px #999999;
+  box-shadow: 1px 1px 5px #999999;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  text-indent: 1em;
+  color: #000000;
+  font-size: 1.2em;
+}
+
+blockquote p {
+  margin: 0;
+}
+
+code {
+  font-family: courier, monospace;
+}
+
 #page a:hover, #page a:focus, #page a:active {
   color: #000;
   text-decoration: underline;
